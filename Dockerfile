@@ -13,8 +13,8 @@ RUN apt-get install -y build-essential
 RUN apt-get install -y a420-development-environment
 
 RUN cd /root && wget -q https://armadillo.atmark-techno.com/files/downloads/dist/atmark-dist-20171227.tar.gz
-RUN cd /root && wget -q https://armadillo.atmark-techno.com/files/downloads/armadillo-iot-g3/source/linux-3.14-x1-at21.tar.gz
+RUN cd /root && wget -q https://armadillo.atmark-techno.com/files/downloads/armadillo-420/source/kernel/linux-3.14-at10.tar.gz
 RUN cd /root && tar zxf atmark-dist-20171227.tar.gz
-RUN cd /root && tar zxf linux-3.14-x1-at21.tar.gz
+RUN cd /root && tar zxf linux-3.14-at10.tar.gz
 RUN cd /root && ln -s atmark-dist-20171227 atmark-dist
-RUN cd /root/atmark-dist && ln -s ../linux-3.14-x1-at21 linux-3.x
+RUN cd /root/atmark-dist && ln -s ../linux-3.14-at10 linux-3.x
